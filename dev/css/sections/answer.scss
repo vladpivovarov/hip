@@ -1,0 +1,90 @@
+.answer{
+  opacity:0;
+}
+
+.answer__fon{
+    min-height: 760px;
+    width: 100%;
+    background:       url(/assets/img/fon-bad-cace.png) 60% 140% no-repeat,
+                      url(/assets/img/fon-cace.png) 0% 150% no-repeat,
+                      url(/assets/img/fon-cacees.png) 100% 150% no-repeat,
+                      url(/assets/img/fon-cake.png) 20% 30% no-repeat,
+                      url(/assets/img/fon-chok.png) -5% -60% no-repeat,
+                      url(/assets/img/fon-cream.png) 70% -60% no-repeat,
+                      url(/assets/img/fon-cruasan.png) 105% 15% no-repeat;
+   
+}
+
+.answer__fon__red{
+    width: 100%;
+    min-height: 760px;
+    background: rgba($red, .9);
+}
+
+.answers{
+    width: 1000px;
+    min-height: 760px;
+    margin: 0 auto;
+    text-align: center;
+    
+    & .title{
+        margin:0;
+        color: #fff;
+        padding-top:100px;
+        padding-bottom: 50px;
+    }
+}
+
+#accordion{
+    text-align: left;
+}
+
+
+
+.h3-accordion{
+    display: inline-block;
+    border-bottom: 2px dashed #fff; 
+    color: #fff;
+    font-size: 22px;
+    cursor:pointer;
+    
+    & span{
+        position: relative;
+        
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            top:100%;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: #bd373d;
+            
+            
+        }
+    }
+    
+}
+
+.h3-accordion-active{
+    color: $orange;
+    border-bottom: 1px dashed transparent; 
+        
+    &:focus, &:active{
+        outline: none;
+    }
+}
+
+.item-accordion{
+    margin-left: 70px;
+
+    
+    & .acc-paragraf{
+        margin:0;
+        padding: 0;
+        font-size: 15px;
+        color:#fff;
+    }
+}
+

@@ -1,0 +1,80 @@
+.delivery{
+    background-image:url(/assets/img/deliverybg.png);
+    min-height: 1140px;
+  opacity: 0;
+}
+
+.delivery-fon{
+    min-height: 1140px;
+    background: rgba(#ffac00, .9);
+    
+}
+
+.deliveryes{
+    width: 840px;
+    padding-top:110px;
+    margin: 0 auto;
+    margin-bottom:100px;
+    text-align: center;
+    
+    & p{
+        color:$red;
+        font-size: 16px;
+    }
+}
+
+.title{
+    @extend .desc-sweet__title;
+    color:$blue;
+    font-weight: 800;
+}
+
+.shop-list{
+    display: block;
+}
+
+.shop-item{
+    width: 220px;
+    min-height: 330px;
+    @include inlineblock(top);
+    text-align: center;
+    margin: 0 25px 70px 25px;
+    
+    & p{
+        color:rgba($red, .7);
+        font-size: 15px;
+    }
+}
+
+.shop-item__image-block{
+    height: 180px;
+}
+
+.big-circle{
+    position: relative;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: rgba($blue, .1);
+    margin: 0 auto;
+}
+
+.big-circle__img{
+    position: absolute;
+    bottom: 0;
+    left:-10px;
+    max-width: 205px;
+    max-height: 220px;
+    
+}
+
+.h2{
+    color: $blue;
+    font-size:32px;
+    font-family: malina, arial;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+
+

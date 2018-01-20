@@ -1,0 +1,97 @@
+.footer{
+    min-height: 125px;
+    margin-top: 50px;
+    & .container{
+        min-height: 125px;
+    }
+  opacity: 0;
+}
+
+.footer-list__item{
+    @include inlineblock(middle);
+    color: #8d8d8d;
+    font-size: 14px;
+    margin-left: 40px;
+    
+    &:first-child{
+        margin-left: 0px;
+    }
+}
+
+.footer-list__item_logo{
+    width: 235px;
+    height: 50px;
+    
+    & a span{
+        font-size: 25px;
+    }
+}
+
+.footer-list__item_socials{
+    max-width: 250px;
+}
+
+.socials-list__item, .socials-link__item{
+    @include inlineblock(middle);
+    width: 30px;
+    height: 30px;
+    
+}
+
+.socials-list__item{
+    margin-left: 15px;
+    opacity:  .5;
+    @include transition(all .4s);
+    &:first-child{
+        margin-left: 0px;
+    }
+    
+    &:hover{
+        opacity:  1;
+    }
+}
+
+
+@each $social in (fb, in, od, tw, vk){
+    .socials-link__item_#{$social}{
+        background: url(/assets/img/#{$social}.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .socials-link__item_#{$social}:hover{
+        background: url(/assets/img/#{$social}-hover.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.up{
+    text-align: center;
+    font-size: 14px;
+    position:fixed;
+    z-index: 999;
+    top: 90%;
+    left: 90%;
+    @include inlineblock(middle);
+    width: 80px;
+    height: 30px;
+    background: $silver;
+    opacity: .4;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #000;
+    @include transition(all .4s);
+    cursor:pointer;
+    
+    &:hover{
+        opacity: 1;
+        color: #fff;
+        @include transform(scale(1.2));
+    }
+}
+
+
+
+
+
